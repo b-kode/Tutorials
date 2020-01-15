@@ -404,14 +404,17 @@ To perform modelling energy fluxes for multiple grids, `SUEWSAdvanced` can be us
 - Set the *Temporal resolution of output (minutes) to 60.*
 - Locate the directory where you saved your output from *SUEWSPrepare* earlier and choose an output folder of your choice.
 - Also, Tick the box *Apply spin-up using...*. This will force the model to run twice using the conditions from the first run as initial conditions for the second run.
-- These are <b style='color:red'>What should be put in the input and output folders??</b>.
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `What should be put in the input and output folders??`.
 - Click *Run*. This computation will take a while so be patient.
-- These are <b style='color:red'>When running, in QGIS, I get the following error message</b>:
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `When running, in QGIS, I get the following error message`:
 
-> 2020-01-15T11:13:12     WARNING    Traceback (most recent call last):
->               File "/home/demuzmp4/.local/share/QGIS/QGIS3/profiles/default/python/plugins/UMEP/SUEWS/suews.py", line 240, in start_progress
->             for file in os.listdir(infolder):
->             FileNotFoundError: [Errno 2] No such file or directory: ''
+``` 
+2020-01-15T11:13:12     WARNING    Traceback (most recent call last):
+File "/home/demuzmp4/.local/share/QGIS/QGIS3/profiles/default/python/plugins/UMEP/SUEWS/suews.py", line 240, in start_progress
+
+for file in os.listdir(infolder):
+FileNotFoundError: [Errno 2] No such file or directory: 
+```
 
 .. figure:: /docs/source/images/SUEWSSpatial_suewsAdvanced.png
    :alt:  none
