@@ -277,7 +277,7 @@ The meteorological dataset used in this tutorial (**MeteorologicalData_NYC_2010.
 - Load **MeteorologicalData_NYC_2010.txt** and make the settings as shown below. Name your new dataset **NYC_metdata_UMEPformatted.txt**.
 
 
-.. figure:: /images/SUEWSSpatial_MetPreprocessor.png
+.. figure:: /images/SUEWSSpatial_MetPreprocessor_md.png
    :alt:  none
    :width: 100%
 
