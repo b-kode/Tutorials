@@ -277,7 +277,7 @@ The meteorological dataset used in this tutorial (**MeteorologicalData_NYC_2010.
 - Load **MeteorologicalData_NYC_2010.txt** and make the settings as shown below. Name your new dataset **NYC_metdata_UMEPformatted.txt**.
 
 
-.. figure:: docs/source/images/SUEWSSpatial_MetPreprocessor_md.png
+.. figure:: /docs/source/images/SUEWSSpatial_MetPreprocessor.png
    :alt:  none
    :width: 100%
 
@@ -294,7 +294,7 @@ A key capability of UMEP is to facilitate preparation of input data for the vari
 
 - Open SUEWS Prepare (*UMEP > Pre-Processor > SUEWS prepare*).
 
-.. figure:: /images/SUEWSSpatial_Prepare1.png
+.. figure:: /docs/source/images/SUEWSSpatial_Prepare1.png
    :alt:  none
    :width: 100%
 
@@ -328,7 +328,7 @@ First you will calculate roughness parameters based on the building geometry wit
 .. note:: For mac users, use this workaround: manually create a directory, go into the folder above and type the folder name. It will give a warning *“—folder name--” already exists. Do you want to replace it?* Click *replace*.
 
 
-.. figure:: /images/SUEWSSpatial_IMCGBuilding.png
+.. figure:: /docs/source/images/SUEWSSpatial_IMCGBuilding.png
    :alt:  none
 
    The settings for calculating building morphology.
@@ -343,7 +343,7 @@ Now you will calculate roughness parameters based on the vegetation (trees and b
 - Use the settings as in the figure below and press *Run*.
 - When calculation is done, close the plugin.
 
-.. figure:: /images/SUEWSSpatial_IMCGVeg.png
+.. figure:: /docs/source/images/SUEWSSpatial_IMCGVeg.png
 
    The settings for calculating vegetation morphology.
 
@@ -355,7 +355,7 @@ Moving on to land cover fraction calculations for each grid.
 - Use the settings as in the figure below and press *Run*.
 - When calculation is done, close the plugin.
 
-.. figure:: /images/SUEWSSpatial_LCF.png
+.. figure:: /docs/source/images/SUEWSSpatial_LCF.png
 
    The settings for calculating land cover fractions
 
@@ -406,7 +406,7 @@ UMEP has a tool for basic analysis of any modelling performed with the SUEWS mod
 
 - Open *UMEP > Post-Processor > Urban Energy Balance > SUEWS Analyzer*. There are two main sections in this tool. The *Plot data*-section can be used to make temporal analysis as well as making simple comparisins between two grids or variables. This *Spatial data*-section can be used to make aggregated maps of the output variables from the SUEWS model. This requires that you have loaded the same polygon grid into your QGIS project that was used when you prepared the input data for SUEWS using *SUEWS Prepare* earlier in this tutorial.
 
-.. figure:: /images/SUEWSAnalyzer.png
+.. figure:: /docs/source/images/SUEWSAnalyzer.png
    :alt:  none
    :width: 100%
 
@@ -420,7 +420,7 @@ You will start by plotting basic data for grid 3242 which is one of the most den
 
 - In the left panel, choose grid *3242* and year *2010*. Tick *plot basic data* and click *Plot*. This will display some of the most essential variables such as radiation balance and budget etc. You can use the tools such as the zoom to examine a shorter time period more in detail.
 
-.. figure:: /images/SUEWSSpatial_basicplot_grid3242.png
+.. figure:: /docs/source/images/SUEWSSpatial_basicplot_grid3242.png
    :alt:  none
    :width: 100%
 
@@ -436,7 +436,7 @@ The right panel in SUEWS Analyzer can be used to perform basic spatial analysis 
 
 - Make the settings as shown in the figure below but change the location where you will save your data on your own system.
 
-.. figure:: /images/SUEWSSpatial_Analyzer.png
+.. figure:: /docs/source/images/SUEWSSpatial_Analyzer.png
    :alt:  none
    :width: 100%
 
