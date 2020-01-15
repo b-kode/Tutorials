@@ -119,7 +119,7 @@ The order in the *Layers Panel* determines what layer is visible. You can choose
 
 The land cover grid comes with a specific QGIS style file.
 
-- Right-click on the land cover layer (**landcover_2010_nyc**) and choose *Properties*. Down to the left you see a *Style*-button. Choose *Load Style* and open **landcoverstyle.qml** and click OK.
+- Right-click on the land cover layer (**landcover_2010_nyc**), go to *Properties > Style* and choose **Singleband pseudocolor**. Down to the left you see a *Style Manager*-button. Choose *Load Style* and open **landcoverstyle.qml** and click Apply.
 - Make only your land cover class layer visible to examine the spatial variability of the different land cover classes.
 
 The land cover grid has already been classified into the seven different classes used in most UMEP applications (see `Land Cover Reclassifier <http://umep-docs.readthedocs.io/en/latest/pre-processor/Urban%20Land%20Cover%20Land%20Cover%20Reclassifier.html>`__). If you have a land cover dataset that is not UMEP formatted you can use the *Land Cover Reclassifier* found at *UMEP > Pre-processor > Urban Land Cover > Land Cover Reclassifier* in the menubar to reclassify your data.
