@@ -408,7 +408,7 @@ To perform modelling energy fluxes for multiple grids, `SUEWSAdvanced` can be us
 
 **QUESTIONS Matthias**::
 
-- Error related to missing QF file. Issue created `here <https://bitbucket.org/fredrik_ucg/umep/issues/125/suews_anthropogenicemissiontxt-does-not>`__)
+Error related to missing QF file. Issue created here: https://bitbucket.org/fredrik_ucg/umep/issues/125/suews_anthropogenicemissiontxt-does-not
 
 .. figure:: /docs/source/images/SUEWSSpatial_suewsAdvanced.png
    :alt:  none
