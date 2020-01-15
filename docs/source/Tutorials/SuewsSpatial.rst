@@ -111,7 +111,7 @@ The order in the *Layers Panel* determines what layer is visible. You can choose
 - Go to *Transparency* and add an additional no data value of 0. Click ok.
 - Now put your **CDSM** layer at the top and your **DSM** layer second in your *Layers Panel*. Now you can see both buildings and vegetation 3D object in your map canvas.
 
-.. figure:: /images/SUEWSSpatial_dataview.png
+.. figure:: /docs/source/images/SUEWSSpatial_dataview.png
    :alt:  none
    :width: 100%
 
