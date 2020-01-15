@@ -408,13 +408,11 @@ To perform modelling energy fluxes for multiple grids, `SUEWSAdvanced` can be us
 
 **QUESTIONS Matthias**::
 
-- What should be put in the input and output folders??
 - When running, in QGIS, I get the following error message: 
-      2020-01-15T11:13:12     WARNING    Traceback (most recent call last): 
-      File "/home/demuzmp4/.local/share/QGIS/QGIS3/profiles/default/python/plugins/UMEP/SUEWS/suews.py", line 240, in start_progress 
-      for file in os.listdir(infolder): 
-      FileNotFoundError: [Errno 2] No such file or directory
-
+      2020-01-15T11:30:46     WARNING    Traceback (most recent call last):
+      File "/home/demuzmp4/.local/share/QGIS/QGIS3/profiles/default/python/plugins/UMEP/SUEWS/suews.py", line 244, in start_progress
+      underscorePos = ([pos for pos, char in enumerate(filenamemetdata) if char == '_'])
+      TypeError: 'NoneType' object is not iterable
 
 .. figure:: /docs/source/images/SUEWSSpatial_suewsAdvanced.png
    :alt:  none
