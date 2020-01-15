@@ -408,11 +408,7 @@ To perform modelling energy fluxes for multiple grids, `SUEWSAdvanced` can be us
 
 **QUESTIONS Matthias**::
 
-- When running, in QGIS, I get the following error message: 
-      2020-01-15T11:30:46     WARNING    Traceback (most recent call last):
-      File "/home/demuzmp4/.local/share/QGIS/QGIS3/profiles/default/python/plugins/UMEP/SUEWS/suews.py", line 244, in start_progress
-      underscorePos = ([pos for pos, char in enumerate(filenamemetdata) if char == '_'])
-      TypeError: 'NoneType' object is not iterable
+- Error related to missing QF file. Issue created `here <https://bitbucket.org/fredrik_ucg/umep/issues/125/suews_anthropogenicemissiontxt-does-not>`__)
 
 .. figure:: /docs/source/images/SUEWSSpatial_suewsAdvanced.png
    :alt:  none
