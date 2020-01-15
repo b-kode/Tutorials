@@ -363,11 +363,14 @@ Population density
 ~~~~~~~~~~~~~~~~~~
 Population density will be used to estimate the anthropogenic heat release (Q\ :sub:`F`) in SUEWS. There is a possibility to use both night-time and daytime population densities to make the model more dynamic. You have two different raster grids for night-time (**pop_nighttime_perha**) and daytime (**pop_daytime_perha**), respectively. This time you will make use of QGIS built-in function to to acquire the population density for each grid.
 
-- Go to *Plugins > Manage and Install Plugins* and make sure that the *Zonal statistics plugin* is ticked. This is a build-in plugin which comes with the QGIS installation.
-- Close the *Plugin manager* and open *Raster > Zonal Statistics > Zonal Statistics*.
+- Go to *Processing > Toolbox* and open *Zonal statistics*. This is a build-in plugin which comes with the QGIS installation.
 - Choose your **pop_daytime_perha** layer as **Raster layer** and your **Grid_500m** and polygon layer. Use a *Output column prefix* of **PPday** and chose only to calculate *Mean*. Click OK.
 - Run the tool again but this time use the night-time dataset.
 
+.. figure:: /docs/source/images/SUEWSSpatial_ZonalStatistics.png
+   :alt:  none
+   :width: 100%
+   
 SUEWS Prepare
 ~~~~~~~~~~~~~
 Now you are ready to organise all the input data into the SUEWS input format.
