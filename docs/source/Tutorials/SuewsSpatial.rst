@@ -361,7 +361,7 @@ Moving on to land cover fraction calculations for each grid.
 
 Population density
 ~~~~~~~~~~~~~~~~~~
-Population density will be used to estimate the anthropogenic heat release (Q\ :sub:`F`) in SUEWS. There is a possibility to use both night-time and daytime population densities to make the model more dynamic. You have two different raster grids for night-time (**pop_nighttime_perha**) and daytime (**pop_daytime_perha**), respectively. This time you will make use of QGIS built-in function to to acquire the population density for each grid.
+Population density will be used to estimate the anthropogenic heat release (Q\ :sub:`F`) in SUEWS. There is a possibility to use both night-time and daytime population densities to make the model more dynamic. You have two different raster grids for night-time (**pop_nighttime_perha**) and daytime (**pop_daytime_perha**), respectively. This time you will make use of QGIS built-in function to acquire the population density for each grid.
 
 - Go to *Processing > Toolbox* and open *Zonal statistics*. This is a build-in plugin which comes with the QGIS installation.
 - Choose your **pop_daytime_perha** layer as **Raster layer** and your **Grid_500m** and polygon layer. Use a *Output column prefix* of **PPday** and chose only to calculate *Mean*. Click OK.
@@ -389,6 +389,10 @@ Now you are ready to organise all the input data into the SUEWS input format.
 - Press *Generate*
 - When processing is finished, close *SUEWS Prepare*.
 
+.. figure:: /docs/source/images/SUEWSSpatial_suewsPrepare.png
+   :alt:  none
+   :width: 100%
+   
 Running the SUEWS model in UMEP
 -------------------------------
 
@@ -400,9 +404,21 @@ To perform modelling energy fluxes for multiple grids, `SUEWSAdvanced` can be us
 - Set the *Temporal resolution of output (minutes) to 60.*
 - Locate the directory where you saved your output from *SUEWSPrepare* earlier and choose an output folder of your choice.
 - Also, Tick the box *Apply spin-up using...*. This will force the model to run twice using the conditions from the first run as initial conditions for the second run.
+- These are <b style='color:red'>What should be put in the input and output folders??</b>.
 - Click *Run*. This computation will take a while so be patient.
+- These are <b style='color:red'>When running, in QGIS, I get the following error message</b>:
 
-Analysing model reults
+> 2020-01-15T11:13:12     WARNING    Traceback (most recent call last):
+>               File "/home/demuzmp4/.local/share/QGIS/QGIS3/profiles/default/python/plugins/UMEP/SUEWS/suews.py", line 240, in start_progress
+>             for file in os.listdir(infolder):
+>             FileNotFoundError: [Errno 2] No such file or directory: ''
+
+.. figure:: /docs/source/images/SUEWSSpatial_suewsAdvanced.png
+   :alt:  none
+   :width: 100%
+   
+   
+Analysing model results
 ----------------------
 
 UMEP has a tool for basic analysis of any modelling performed with the SUEWS model. The `SUEWSAnalyser <http://umep-docs.readthedocs.io/en/latest/post_processor/Urban%20Energy%20Balance%20SUEWS%20Analyser.html>`__ tool is available from the post-processing section in UMEP.
